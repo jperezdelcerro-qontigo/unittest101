@@ -16,14 +16,11 @@ class PortfoliosAnalyzer(object):
         Count the lost bond between them
         :return lost bonds:
         """
-        return len(set(self.portfolio_a[self.NAME]) - set(self.portfolio_b[self.NAME]))
+        return 0
 
     def find_max_increased_bond(self) -> str:
         """
         Finds the bond whose price has increased the most between portfolios
         :return bond name:
         """
-        merged_df = pd.merge(self.portfolio_a, self.portfolio_b, on=self.NAME,
-                             suffixes=("portfolio_a", "portfolio_b"))
-        merged_df["Price_difference"] = merged_df[self.PRICE + "portfolio_b"] - merged_df[self.PRICE + "portfolio_a"]
-        return merged_df.loc[merged_df["Price_difference"].idxmax()][self.NAME]
+        return ""
