@@ -1,0 +1,6 @@
+
+InstrumentId,Name,Date,Price
+A123,BondA,2021-10-29,100.0
+A456,BondB,2021-10-29,200.0
+A456,BondD,2021-10-29,200.0
+A789,BondC,2021-10-29,300.1
